@@ -102,7 +102,13 @@ function registrarPago() {
         alert("Cliente no encontrado");
     }
 }
+// AUTO ASIGNAR MONTO
+function actualizarMonto() {
+    let select = document.getElementById("membresia");
+    let monto = document.getElementById("monto");
 
+    monto.value = select.value;
+}
 // =======================
 // VERIFICAR ACCESO
 // =======================

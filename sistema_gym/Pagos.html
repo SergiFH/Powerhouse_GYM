@@ -9,17 +9,22 @@
 <h2>💰 Pagos</h2>
 
 <div class="container">
-
 <input id="clientePago" placeholder="Nombre cliente">
-<input id="monto" placeholder="Monto">
+
+<select id="membresia" onchange="actualizarMonto()">
+    <option value="">Selecciona membresía</option>
+    <option value="150">Semana</option>
+    <option value="280">Quincena</option>
+    <option value="550">Mes</option>
+    <option value="400">Mes Team</option>
+    <option value="390">Mes Estudiante</option>
+</select>
+
+<input id="monto" placeholder="Monto" readonly>
+
 <select id="metodo">
     <option>Efectivo</option>
     <option>Transferencia</option>
-</select>
-
-<select id="membresia">
-    <option>Mensual</option>
-    <option>Semanal</option>
 </select>
 
 <button onclick="registrarPago()">Registrar Pago</button>
